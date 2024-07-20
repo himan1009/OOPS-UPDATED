@@ -15,6 +15,13 @@ int main(){
     s1.roll=20;
     s1.grade="A++";
 
+    Student s2;
+    s2.name="Mohit";
+    s2.age=11;
+    s2.roll=21;
+    s2.grade="B++";\
+
 
     cout<<s1.age<<endl;
+    cout<<s2.grade<<endl;
 }
