@@ -10,6 +10,10 @@ private:
     // getter and setter
 public:
     void setName(string s){
+        if(s.size()==0){
+            cout<<"invalid name"<<endl;
+            return;
+        }
         name=s;
     }
     void setAge(int a){
@@ -34,7 +38,7 @@ public:
 
 int main(){
     Student s1;
-    s1.setName("Rohit");
+    s1.setName("Rohit KUmar");
     s1.setAge(10);
     s1.setRoll(30);
     s1.setGrade("B++");
