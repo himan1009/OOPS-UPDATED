@@ -2,26 +2,43 @@
 using namespace std;
 
 class Student{
-public:
+private:
     string name;
     int age, roll;
     string grade;
+
+    // getter and setter
+public:
+    void setName(string s){
+        name=s;
+    }
+    void setAge(int a){
+        age=a;
+    }
+    void setRoll(int r){
+        roll=r;
+    }
+    void setGrade(string g){
+        grade=g;
+    }
+
+
+
+    void getName(){
+        cout<<name<<endl;
+    }
+    void getAge(){
+        cout<<age<<endl;
+    }
 };
 
 int main(){
     Student s1;
-    s1.name="Rohit";
-    s1.age=10;
-    s1.roll=20;
-    s1.grade="A++";
+    s1.setName("Rohit");
+    s1.setAge(10);
+    s1.setRoll(30);
+    s1.setGrade("B++");
 
-    Student s2;
-    s2.name="Mohit";
-    s2.age=11;
-    s2.roll=21;
-    s2.grade="B++";\
-
-
-    cout<<s1.age<<endl;
-    cout<<s2.grade<<endl;
+    s1.getName();
+    s1.getAge();
 }
